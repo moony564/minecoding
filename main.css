@@ -1,10 +1,11 @@
-li {color: red;}
-.link {
-    color: black;
-    text-decoration: none;
-
+body{
+    margin:0;
 }
-.page-header {
+a {
+    color:black;
+    text-decoration: none;
+}
+.page_header {
     color: black;
     font-size: 45px;
     text-align: center;
@@ -21,9 +22,22 @@ li {color: red;}
     padding: 20px;
     color: gray;
 }
-ol {
-    border-right: 1px solid gray;
-    width: 200px;
-    margin: 0px;
-    padding: 20px;
+ol{
+    border-right:1px solid gray;
+    width:175px;
+    margin:0;
+    padding:20px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 225px 1fr;
+}
+#grid ol{
+    padding-left:33px;
+}
+#grid #article{
+    padding-left:25px;
+}
+.here-page {
+    color: red;
 }

@@ -1,19 +1,37 @@
-<!DOCTYPE html>
-<html lang="UTF-8">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="page-header" onclick="location.href='index.html'">마인코딩의 사이트</h1>
-    <h3 class="page-lore">Minecoding's site</h3>
-    <ol>
-        <li><a href="index.html" class="link">홈(Home)</a></li>
-        <li><a href="#" class="link">NotTing</a></li>
-    </ol>
-    
-</body>
+<!doctype html>
+<html>
+    <head>
+        <title>마인코딩</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="./img/main.ico">
+    </head>
+    <body>
+        <h1 class="page_header"><a href="index.html">마인코딩</a></h1>
+        <h3 class="page-lore">Minecoding's site</h3>
+        <div id="grid">
+            <ol>
+                <li class="here-page"><a href="index.html" class="here-page">>메인사이트<</a></li>
+                <li><a href="#">테스트1</a></li>
+                <li><a href="#">테스트2</a></li>
+            </ol>
+            <div id="article">
+                <h2>시작하면서</h2>
+                <p>
+                    이곳은 마인코딩의 사이트입니다. 아직 많은 기능이 없고, 디자인도 많이 부족하지만, 앞으로 많은 기능과 디자인을 추가할 예정입니다.
+                    밑에 보이는 채팅기능으로 기능 추천을 받으니 많은 피드백 부탁드립니다.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- 여기서부터는 채팅 서비스 채널이오 영역 -->
+        <script>
+            (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+          
+            ChannelIO('boot', {
+              "pluginKey": "f763edf3-1bfb-4aff-b5e3-40d62b7b69f6"
+            });
+        </script>
+    </body>
 </html>
